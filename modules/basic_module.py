@@ -11,6 +11,6 @@ class BasicModule(BaseModule):
         answer = eval(exp,{"__builtins__":None})
         return '%s %s' % (m['text'], answer)
       except Exception, e:
-        return 'Cannot evaluate: %s' % str(e)
+        return None
 
     return None
